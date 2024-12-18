@@ -6,11 +6,16 @@ time_bound = input("Is it time-bound? (yes/no): ")
 while time_bound.lower() not in ["yes", "no"]:
     time_bound = input("Is it time-bound? (yes/no): ")
 match priority.lower():
-    case "high"| "medium"| "low":
-        #print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
-        match time_bound.lower():
-            case "yes":
-             print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
-            case _ if "no":
-                print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
+    case "high":
+          message = f"'{task}' is {priority} priority task "
+    case "medium":
+          message = f"'{task}' is {priority} priority task "
+    case "low":
+          message = f"'{task}' is {priority} priority task "
+          
+if  time_bound.lower() == "yes":
+    
+    print(f"{message} that requires immediate attention today!")         
+else:
+    print(f"{message}. Consider completing it when you have free time.")         
    

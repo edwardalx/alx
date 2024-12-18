@@ -15,7 +15,7 @@ match priority:
           
 if  time_bound == "yes":
     
-    print(f"{message} that requires immediate attention today!")         
+    print(f"Reminder:{message} that requires immediate attention today!")         
 else:
-    print(f"{message}. Consider completing it when you have free time.")         
+    print(f"Note:{message}. Consider completing it when you have free time.")         
    

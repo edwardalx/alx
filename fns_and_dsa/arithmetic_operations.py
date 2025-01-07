@@ -12,8 +12,11 @@ def perform_operation(num1, num2, operation):
     elif operation == "multiply":
         result = num1 * num2
         return result
-    elif operation == "divide":
+    elif operation == "divide" and num2 != 0 :
         result = num1 / num2  
         return result
+    elif  num2 == 0 and operation == "divide":
+         result = "The denominator can not be zero"
+         return result
     
 # print(perform_operation(num1,num2,operation))

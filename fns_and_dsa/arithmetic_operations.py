@@ -6,16 +6,16 @@ def perform_operation(num1, num2, operation):
     if operation == "add":
         result = num1 + num2
         return result
-    elif operation == "subtract":
+    if operation == "subtract":
         result = num1 - num2
         return result  
-    elif operation == "multiply":
+    if operation == "multiply":
         result = num1 * num2
         return result
-    elif operation == "divide" and num2 != 0 :
+    if operation == "divide" and num2 != 0 :
         result = num1 / num2  
         return result
-    elif  num2 == 0 and operation == "divide":
+    elif  operation == "divide" and num2 == 0:
          result = "The denominator can not be zero"
          return result
     

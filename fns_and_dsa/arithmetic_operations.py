@@ -15,7 +15,6 @@ def perform_operation(num1, num2, operation):
     if operation == "divide": #and num2 != 0 :  
         if num2 == 0:
             result = "The denominator can not be zero"
-        else:
-            result = num1/num2
+        result = num1/num2
     return result
     

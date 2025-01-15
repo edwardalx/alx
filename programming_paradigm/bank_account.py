@@ -4,12 +4,12 @@ class BankAccount:
     
     def deposit(self,amount):
         self.account_balance += amount
-        return 
+        return self.account_balance
 
     def withdraw(self,amount):
         if  self.account_balance > amount:
-            result = self.account_balance - amount
-            return result
+            self.account_balance -= amount
+            return self.account_balance
         else:
             False
     
@@ -17,3 +17,11 @@ class BankAccount:
         result = ["Current Balance:"]
         return print(f"{result[0]} ${round(self.account_balance,2):.2f}")
 
+myBank = BankAccount(50)
+print(myBank.deposit(50))
+
+myBank.display_balance()
+
+print(myBank.withdraw(20))
+
+myBank.display_balance()

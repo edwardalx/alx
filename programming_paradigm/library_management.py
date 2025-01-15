@@ -91,7 +91,8 @@ class Library:
         else:
             print("No books available at the moment.")
 
-mybook1 =Book("Brave New World", "Aldous Huxley")
-myLib = Library()
-myLib.add_book(mybook1)
-myLib.return_book(mybook1.title)
+# For my tests
+# mybook1 =Book("Brave New World", "Aldous Huxley") 
+# myLib = Library()
+# myLib.add_book(mybook1)
+# myLib.return_book(mybook1.title)

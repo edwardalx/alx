@@ -53,8 +53,8 @@ class Book:
 
 
 class Library:
-    def __init__(self, _books=None):
-        self._books = _books if _books is not None else []
+    def __init__(self):
+        self._books = []
 
     def add_book(self, book):
         self._books.append(book)

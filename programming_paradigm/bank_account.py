@@ -15,5 +15,5 @@ class BankAccount:
     
     def display_balance(self):
         result = ["Current Balance:"]
-        return print(f"{result[0]} ${self.account_balance}")
+        return print(f"{result[0]} ${round(self.account_balance,2):.2f}")
 

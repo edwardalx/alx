@@ -17,11 +17,11 @@ class BankAccount:
         result = ["Current Balance:"]
         return print(f"{result[0]} ${round(self.account_balance,2):.2f}")
 
-myBank = BankAccount(50)
-print(myBank.deposit(50))
+# myBank = BankAccount(50)
+# print(myBank.deposit(50))
 
-myBank.display_balance()
+# myBank.display_balance()
 
-print(myBank.withdraw(20))
+# print(myBank.withdraw(20))
 
-myBank.display_balance()
+# myBank.display_balance()

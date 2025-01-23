@@ -1,7 +1,6 @@
+from book_class import Book
 
- from book_class import Book
-
- def main():
+def main():
      # Creating an instance of Book
      my_book = Book("1984", "George Orwell", 1949)
 
@@ -14,13 +13,13 @@
      # Deleting a book instance to trigger __del__
      del my_book
 
- if __name__ == "__main__":
+if __name__ == "__main__":
      main()
 
- from library_system import Book, EBook, PrintBook, Library
+from library_system import Book, EBook, PrintBook, Library
 
 
- def main():
+def main():
      # Create a Library instance
      my_library = Library()
 
@@ -37,13 +36,13 @@
      # List all books in the library
      my_library.list_books()
 
- if __name__ == "__main__":
+if __name__ == "__main__":
      main()
 
- from polymorphism_demo import Shape, Rectangle, Circle
- import math
+from polymorphism_demo import Shape, Rectangle, Circle
+import math
 
- def main():
+def main():
      shapes = [
          Rectangle(10, 5),
          Circle(7)
@@ -52,7 +51,7 @@
      for shape in shapes:
          print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
 
- if __name__ == "__main__":
+if __name__ == "__main__":
      main()
 
 from class_static_methods_demo import Calculator
